@@ -1,0 +1,14 @@
+[
+  {
+    "id": 0,
+    "name": "Github",
+    "link": "https://github.com/philemonmastewal",
+    "icon": "/icons/github.svg"
+  },
+  {
+    "id": 1,
+    "name": "LinkedIn",
+    "link": "https://www.linkedin.com/in/philemon-mastewal-a608b6107/",
+    "icon": "/icons/linkedin.svg"
+  }
+]
