@@ -31,7 +31,7 @@ export const Skills = () => (
 					Let's Connect
 				</Button>
 				<Button>
-					<a href={PDF}>Resume</a>
+					<a href={PDF}>Resume (.pdf)</a>
 				</Button>
 			</Details>
 		</SkillsWrapper>

@@ -43,6 +43,7 @@ export const Details = styled.div`
 	button {
 		margin-left: 30px;
 		text-decoration: none;
+		color: white;
 
 		@media (max-width: 960px) {
 			/* width: 3.75rem; */
@@ -54,8 +55,15 @@ export const Details = styled.div`
 			flex-direction: column;
 		}
 	}
+	button a {
+		color: white;
+	}
 	a {
 		text-decoration: none;
+		color: white;
+	}
+	a:link {
+		color: white;
 	}
 	a:visited {
 		color: white;
