@@ -42,6 +42,7 @@ export const Details = styled.div`
 	}
 	button {
 		margin-left: 30px;
+		text-decoration: none;
 
 		@media (max-width: 960px) {
 			/* width: 3.75rem; */
@@ -52,6 +53,9 @@ export const Details = styled.div`
 			margin-top: 2rem;
 			flex-direction: column;
 		}
+	}
+	a {
+		text-decoration: none;
 	}
 	a:visited {
 		color: white;
