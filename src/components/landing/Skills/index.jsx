@@ -1,8 +1,18 @@
 import React from 'react'
+import { Document, Page } from 'react-pdf/dist/entry.webpack'
 import AnchorLink from 'react-anchor-link-smooth-scroll'
 import { Container, Button } from 'Common'
 import dev from 'Static/illustrations/skills.svg'
-import { Wrapper, SkillsWrapper, Details, Thumbnail } from './styles'
+import Collapsible from 'react-collapsible'
+import PDF from '../../../../static/pdfs/portfolio_resume.pdf'
+import {
+	Wrapper,
+	SkillsWrapper,
+	Details,
+	Thumbnail,
+	Resume,
+	Resume2,
+} from './styles'
 
 export const Skills = () => (
 	<Wrapper id="about">
@@ -20,7 +30,18 @@ export const Skills = () => (
 				<Button as={AnchorLink} href="#contact">
 					Let's Connect
 				</Button>
+				<Button>
+					<a href={PDF}>Resume</a>
+				</Button>
 			</Details>
 		</SkillsWrapper>
+		{/* 
+		<Resume>
+			<Collapsible trigger="Resume">
+				<Document file={PDF}>
+					<Page pageNumber={1} />
+				</Document>
+			</Collapsible>
+		</Resume> */}
 	</Wrapper>
 )

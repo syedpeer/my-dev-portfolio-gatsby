@@ -73,10 +73,10 @@ const ContactForm = ({
 		{values.success && (
 			<InputField>
 				<Center>
-					<h4>
+					<h3>
 						Your message has been successfully sent, I will get back to you
-						ASAP!
-					</h4>
+						ASAP! {/*  *** alert for message submission */}
+					</h3>
 				</Center>
 			</InputField>
 		)}

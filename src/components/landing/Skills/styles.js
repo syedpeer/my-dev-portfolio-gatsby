@@ -40,6 +40,22 @@ export const Details = styled.div`
 		line-height: 1.3;
 		color: #707070;
 	}
+	button {
+		margin-left: 30px;
+
+		@media (max-width: 960px) {
+			/* width: 3.75rem; */
+			/* margin-top: 2rem; */
+			flex-direction: column;
+		}
+		@media (max-width: 460px) {
+			margin-top: 2rem;
+			flex-direction: column;
+		}
+	}
+	a:visited {
+		color: white;
+	}
 `
 
 export const Thumbnail = styled.div`
@@ -54,3 +70,47 @@ export const Thumbnail = styled.div`
 		width: 100%;
 	}
 `
+
+export const Resume = styled.div`
+	/* display: block; */
+	margin-left: auto;
+	margin-right: auto;
+	width: 43.5%;
+	background: #0074d9;
+	margin-bottom: 2rem;
+	margin-top: 3rem;
+	font-size: 26pt;
+	color: #fff;
+	text-align: center;
+	border-radius: 3px;
+	cursor: pointer;
+	justify-content: center;
+	padding: 0.7rem 2.5rem;
+
+	@media (max-width: 960px) {
+		position: relative;
+	}
+`
+export const Resume2 = styled.div`
+	/* display: block; */
+	margin-left: auto;
+	margin-right: auto;
+	width: 15%;
+	background: #0074d9;
+	margin-bottom: 2rem;
+	margin-top: 3rem;
+	font-size: 26pt;
+	color: #fff;
+	text-align: center;
+	border-radius: 3px;
+	cursor: pointer;
+	justify-content: center;
+	padding: 0.7rem 2.5rem;
+
+	@media (max-width: 960px) {
+		position: relative;
+	}
+`
+// export const Collap = styled.div`
+// 	box-shadow: 3px 5px 15px white;
+// `
