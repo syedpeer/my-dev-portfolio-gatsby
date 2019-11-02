@@ -4,7 +4,7 @@ import AnchorLink from 'react-anchor-link-smooth-scroll'
 import { Container, Button } from 'Common'
 import dev from 'Static/illustrations/skills.svg'
 import Collapsible from 'react-collapsible'
-import PDF from '../../../../static/pdfs/portfolio_resume.pdf'
+import PDF from '../../../../static/pdfs/resume_philemon_mastewal.pdf'
 import {
 	Wrapper,
 	SkillsWrapper,
