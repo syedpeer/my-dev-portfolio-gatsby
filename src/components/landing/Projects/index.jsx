@@ -1,8 +1,8 @@
 import React from 'react'
 import { useStaticQuery, graphql } from 'gatsby'
 import { Container, Card } from 'Common'
-import starIcon from 'Static/icons/star.svg'
-import forkIcon from 'Static/icons/fork.svg'
+// import starIcon from 'Static/icons/star.svg'
+// import forkIcon from 'Static/icons/fork.svg'
 import { Wrapper, Grid, Item, Content, Stats } from './styles'
 
 export const Projects = () => {
@@ -54,7 +54,7 @@ export const Projects = () => {
 								<h4>{node.name}</h4>
 								<p>{node.description}</p>
 							</Content>
-							<Stats>
+							{/* <Stats>
 								<div>
 									<img src={starIcon} alt="stars" />
 									<span>{node.stargazers.totalCount}</span>
@@ -63,7 +63,7 @@ export const Projects = () => {
 									<img src={forkIcon} alt="forks" />
 									<span>{node.forkCount}</span>
 								</div>
-							</Stats>
+							</Stats> */}
 						</Card>
 					</Item>
 				))}

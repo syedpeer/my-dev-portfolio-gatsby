@@ -1,17 +1,17 @@
 import React from 'react'
-import { Document, Page } from 'react-pdf/dist/entry.webpack'
+// import { Document, Page } from 'react-pdf/dist/entry.webpack'
 import AnchorLink from 'react-anchor-link-smooth-scroll'
 import { Container, Button } from 'Common'
 import dev from 'Static/illustrations/skills.svg'
-import Collapsible from 'react-collapsible'
+// import Collapsible from 'react-collapsible'
 import PDF from '../../../../static/pdfs/resume_philemon_mastewal.pdf'
 import {
 	Wrapper,
 	SkillsWrapper,
 	Details,
-	Thumbnail,
-	Resume,
-	Resume2,
+	Thumbnail
+	// Resume,
+	// Resume2,
 } from './styles'
 
 export const Skills = () => (
