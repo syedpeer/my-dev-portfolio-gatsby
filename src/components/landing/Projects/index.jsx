@@ -18,7 +18,7 @@ export const Projects = () => {
         repositoryOwner(login: "philemonmastewal") {
           repositories(
             first: 3
-            orderBy: { field: PUSHED_AT, direction: DESC }
+            orderBy: { field: STARGAZERS, direction: DESC }
           ) {
             edges {
               node {
@@ -55,15 +55,15 @@ export const Projects = () => {
                 <p>{node.description}</p>
               </Content>
               {/* <Stats>
-			<div>
-				<img src={starIcon} alt="stars" />
-				<span>{node.stargazers.totalCount}</span>
-			</div>
-			<div>
-				<img src={forkIcon} alt="forks" />
-				<span>{node.forkCount}</span>
-			</div>
-		</Stats> */}
+								<div>
+									<img src={starIcon} alt="stars" />
+									<span>{node.stargazers.totalCount}</span>
+								</div>
+								<div>
+									<img src={forkIcon} alt="forks" />
+									<span>{node.forkCount}</span>
+								</div>
+							</Stats> */}
             </Card>
           </Item>
         ))}
