@@ -1,6 +1,7 @@
+/* eslint-disable indent */
 import React from 'react'
 import { useStaticQuery, graphql } from 'gatsby'
-import { Container, Card } from 'Common'
+import { Container, Card, Button } from 'Common'
 // import starIcon from 'Static/icons/star.svg'
 // import forkIcon from 'Static/icons/fork.svg'
 import { Wrapper, Grid, Item, Content, Stats } from './styles'
@@ -25,6 +26,7 @@ export const Projects = () => {
                 id
                 name
                 url
+                homepageUrl
                 description
                 stargazers {
                   totalCount
@@ -45,15 +47,24 @@ export const Projects = () => {
           <Item
             key={node.id}
             as="a"
-            href={node.url}
-            target="_blank"
+            // href={node.homepageUrl}
+            // target="_blank"
             rel="noopener noreferrer"
           >
             <Card>
               <Content>
                 <h4>{node.name}</h4>
                 <p>{node.description}</p>
+
+                {/* <a>{node.homepageUrl}</a> */}
               </Content>
+              <Button as="a" target="_blank" href={node.url}>
+                GitHub
+              </Button>
+              <Button as="a" target="_blank" href={node.homepageUrl}>
+                Demo
+              </Button>
+
               {/* <Stats>
 								<div>
 									<img src={starIcon} alt="stars" />
